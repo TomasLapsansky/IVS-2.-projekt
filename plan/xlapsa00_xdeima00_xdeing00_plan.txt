@@ -1,0 +1,36 @@
+Predbezne stanovenie terminov:
+--------------------------------------------------------
+02.04.2017 - Termin ukoncenia 1. ulohy
+	...rozdelenie dalsich uloh bude vykonane dna 02.04.2017
+
+Pridelene ulohy:
+--------------------------------------------------------
+Lapsansky:
+	1. uloha:
+		- Vytvorenie testov pre matematicku kniznicu
+		- Vytvorenie matematickej kniznice (+ - * / N! A^N sqrt(N)) pomocou C/C++ na bazi TDD
+	
+Dejmal:
+	1. uloha:
+		- Vytvorenie GUI pomocou Qt
+		
+Deingruber:
+	1. uloha:
+		- Vytvorenie Doxyfile
+		- Priebezne upravovanie matematickej kniznice pre korektnost Doxygenu
+		
+TODO list:
+	- Zlinkovanie matematickej kniznice a GUI
+	- Vytvorenie Makefilu a instalatora pre potrebne operacne systemy
+	- Vytvorenie uzivatelskej prirucky
+	...dalsie zadania budu pridavane priebezne pocas konzultacnych stretnuti
+	
+		
+System pre spravu verzii:
+--------------------------------------------------------
+ - GITHUB
+ - adresa:	git@github.com:TomasLapsansky/IVS-2.-projekt.git
+ 
+Komunikacny system:
+--------------------------------------------------------
+ - Pravidelne konzultacne stretnutia 2x do tyzdna
