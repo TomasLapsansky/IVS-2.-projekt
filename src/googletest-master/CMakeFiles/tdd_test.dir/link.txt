@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/tdd_test.dir/mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.cpp.o CMakeFiles/tdd_test.dir/tdd_tests.cpp.o  -o tdd_test -rdynamic googlemock/gtest/libgtest_main.so googlemock/gtest/libgtest.so -lpthread -Wl,-rpath,/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/gtest 
