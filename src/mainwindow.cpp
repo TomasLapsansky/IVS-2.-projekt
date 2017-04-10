@@ -1,12 +1,13 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "QKeyEvent"
+#include <math_library.h>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
 }
 
 MainWindow::~MainWindow()   //destruktor hlavního okna
@@ -14,7 +15,7 @@ MainWindow::~MainWindow()   //destruktor hlavního okna
     delete ui;
 }
 
-void MainWindow::on_BT_1_clicked()  //TODO z tohohle zrobit funkci
+void MainWindow::on_BT_1_clicked()
 {
     Zapis('1');
 }
@@ -26,7 +27,7 @@ void MainWindow::on_BT_2_clicked()
 
 void MainWindow::on_BT_3_clicked()
 {
-   Zapis('3');
+    Zapis('3');
 }
 
 void MainWindow::on_BT_4_clicked()
@@ -41,28 +42,31 @@ void MainWindow::on_BT_5_clicked()
 
 void MainWindow::on_BT_6_clicked()
 {
-  Zapis('6');
+    Zapis('6');
 }
 
 void MainWindow::on_BT_7_clicked()
 {
-    Zapis('7');
+     Zapis('7');
 }
 
 void MainWindow::on_BT_8_clicked()
 {
-     Zapis('8');
+    Zapis('8');
 }
 
 void MainWindow::on_BT_9_clicked()
 {
-   Zapis('9');
-
+     Zapis('9');
 }
 
 void MainWindow::on_BT_0_clicked()
 {
-  Zapis('0');
+     Zapis('0');
+}
+
+void MainWindow::on_BT_pi_clicked()
+{
 
 }
 
@@ -120,10 +124,10 @@ void MainWindow::on_BT_Plus_clicked()
    if(transfer==0)  //prevod se nepodaril
     {
       a=0;
-      ui->lineEdit->setText("Spatne zadane cislo!");
+      ui->lineEdit->setText("Spatny format cisla!");
     }
     prepis=true;    //nasleduji zadane cislo bude moct prepsat cely retezec
-    operat=plus;    //zapamtuju ze mam zadane plus
+    operat=pluss;    //zapamtuju ze mam zadane plus
 }
 
 void MainWindow::on_BT_Comma_clicked()
@@ -144,61 +148,121 @@ void MainWindow::on_BT_Equal_clicked()
     if(transfer==0)  //prevod se nepodaril
      {
        b=0;
-       ui->lineEdit->setText("Spatne zadane cislo!");
+       ui->lineEdit->setText("Spatny format cisla!");
        prepis=true;    //nasleduji zadane cislo bude moct prepsat cely retezec
      }
     else
     {
         switch (operat)
         {
-            case plus:
+            case pluss:
+                help_qstring=QString::number(plus(a,b,&chyba));    //prevede double do qstringu
+                if(chyba)
+                {
+                   ui->lineEdit->setText("Math error!");
+                }
+                else
+                {
 
-                  //TODO arit funcion
-                // help_qstring=help_char;
+                    ui->lineEdit->setText(help_qstring);
+                }
+                break;
 
-                help_qstring=QString::number(a+b);    //prevede double do qstringu
+        case minuss:
+            help_qstring=QString::number(minus(a,b,&chyba));    //prevede double do qstringu
+            if(chyba)
+            {
+               ui->lineEdit->setText("Math error!");
+               prepis=true;
+               chyba=false;
+            }
+            else
+            {
                 ui->lineEdit->setText(help_qstring);
-
-                break;
-        case minus:
-
-          //TODO arit funcion
-          // help_qstring=help_char;
-          //ui->lineEdit->setText(help_qstring);
-            help_qstring=QString::number(a-b);    //prevede double do qstringu
-            ui->lineEdit->setText(help_qstring);
+            }
 
             break;
-        case mul:
 
-          //TODO arit funcion
-          // help_qstring=help_char;
-          //ui->lineEdit->setText(help_qstring);
-            help_qstring=QString::number(a*b);    //prevede double do qstringu
+        case mull:
+            help_qstring=QString::number(multi(a,b,&chyba));    //prevede double do qstringu
             ui->lineEdit->setText(help_qstring);
+            if(chyba)
+            {
+               ui->lineEdit->setText("Math error!");
+               prepis=true;
+               chyba=false;
+            }
+            else
+            {
 
+                ui->lineEdit->setText(help_qstring);
+            }
             break;
-        case div:
 
-          //TODO arit funcion
-          // help_qstring=help_char;
-          //ui->lineEdit->setText(help_qstring);
-            help_qstring=QString::number(a/b);    //prevede double do qstringu
-            ui->lineEdit->setText(help_qstring);
-
+        case divv:
+            help_qstring=QString::number(divis(a,b,&chyba));    //prevede double do qstringu
+            if(chyba)
+            {
+               ui->lineEdit->setText("Math error!");
+               prepis=true;
+               chyba=false;
+            }
+            else
+            {
+                ui->lineEdit->setText(help_qstring);
+                prepis=true;
+                chyba=false;
+            }
             break;
-        case fakt:
 
-          //TODO arit funcion
-          // help_qstring=help_char;
-          //ui->lineEdit->setText(help_qstring);
-            help_qstring=QString::number(5555);    //prevede double do qstringu
-            ui->lineEdit->setText(help_qstring);
-
+        case faktt:
+            help_qstring=QString::number(fact(b,&chyba));    //prevede double do qstringu
+            if(chyba)
+            {
+               ui->lineEdit->setText("Math error!");
+            }
+            else
+            {
+                ui->lineEdit->setText(help_qstring);
+                prepis=true;
+                chyba=false;
+            }
             break;
-            default:
-                break;
+
+        case poww:
+            help_qstring=QString::number(power(a,b,&chyba));    //prevede double do qstringu
+            if(chyba)
+            {
+               ui->lineEdit->setText("Math error!");
+            }
+            else
+            {
+                ui->lineEdit->setText(help_qstring);
+                prepis=true;
+                chyba=false;
+            }
+            break;
+
+        case sqrtt:
+            help_qstring=QString::number(root(b,&chyba));    //prevede double do qstringu
+            if(chyba)
+            {
+               ui->lineEdit->setText("Math error!");
+               prepis=true;
+               chyba=false;
+            }
+            else
+            {
+
+                ui->lineEdit->setText(help_qstring);
+            }
+            break;
+
+
+       default:
+               break;
         }
+
     operat=nothing;
    }
 }
@@ -206,37 +270,109 @@ void MainWindow::on_BT_Equal_clicked()
 void MainWindow::on_BT_Minus_clicked()
 {
    on_BT_Plus_clicked();
-   operat=minus;
+   operat=minuss;
 }
 
 void MainWindow::on_BT_Mul_clicked()
 {
     on_BT_Plus_clicked();
-    operat=mul;
+    operat=mull;
 }
 
 void MainWindow::on_BT_Div_clicked()
 {
     on_BT_Plus_clicked();
-    operat=div;
+    operat=divv;
 }
 
 void MainWindow::on_BT_Fakt_clicked()   // unarni operator si hned vola rovna se
 {
     on_BT_Plus_clicked();
-    operat=fakt;
+    operat=faktt;
     on_BT_Equal_clicked();
 }
 
-void MainWindow::on_BT_Sqrt_clicked()
+void MainWindow::on_BT_Sqrt_clicked()   // unarni operator si hned vola rovna se
 {
     on_BT_Plus_clicked();
-    operat=fakt;
+    operat=sqrtt;
     on_BT_Equal_clicked();
 }
 
 void MainWindow::on_BT_Pow_clicked()
 {
     on_BT_Plus_clicked();
-    operat=pow;
+    operat=poww;
+}
+
+void MainWindow::keyPressEvent(QKeyEvent * event)
+{
+
+ switch (event->key()) {
+     case Qt::Key_0:
+          Zapis('0');
+          break;
+     case Qt::Key_1:
+          Zapis('1');
+          break;
+     case Qt::Key_2:
+          Zapis('2');
+          break;
+     case Qt::Key_3:
+          Zapis('3');
+          break;
+     case Qt::Key_4:
+          Zapis('4');
+          break;
+     case Qt::Key_5:
+          Zapis('5');
+          break;
+     case Qt::Key_6:
+          Zapis('6');
+          break;
+     case Qt::Key_7:
+          Zapis('7');
+          break;
+     case Qt::Key_8:
+          Zapis('8');
+          break;
+     case Qt::Key_9:
+          Zapis('9');
+          break;
+     case Qt::Key_Plus:
+          on_BT_Plus_clicked();
+          break;
+     case Qt::Key_Minus:
+          on_BT_Minus_clicked();
+          break;
+     case Qt::Key_Enter:
+          on_BT_Equal_clicked();
+          break;
+     case Qt::Key_Backspace:
+          on_BT_Delete_clicked();
+          break;
+     case Qt::Key_Delete:
+          on_BT_CLEAR_clicked();
+          break;
+     case Qt::Key_Comma:
+          on_BT_Comma_clicked();
+          break;
+     case Qt::Key_Slash:
+          on_BT_Div_clicked();
+          break;
+     case Qt::Key_Exclam:
+          on_BT_Fakt_clicked();
+          break;
+     case Qt::Key_Period://TODO znak *
+          on_BT_Mul_clicked();
+          break;
+     case Qt::Key_Equal:
+          on_BT_Equal_clicked();
+          break;
+   /*  case Qt::Key_://TODO znak ^ a sqrt ma zkratku???
+          on_BT_Pow_clicked();
+          break;*/
+    default:
+         break;
+ }
 }
