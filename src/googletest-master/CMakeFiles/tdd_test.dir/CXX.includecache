@@ -21,6 +21,8 @@ stdbool.h
 -
 limits.h
 -
+math.h
+-
 
 googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h
