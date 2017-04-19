@@ -67,12 +67,12 @@ double divis(double x, double y, bool *error);
 double fact(double x, bool *error);
 
 /**
- * @brief funkce pocitajici faktorial cisla
+ * @brief funkce pocitajici n-tou mocninu cisla
  * @ingroup Functions
- * @param x cislo z ktereho chceme vypocist faktorial
- * @param n cislo urcujici mocninu
+ * @param x cislo z ktereho chceme vypocist mocninu
+ * @param n cele kladne cislo urcujici mocnitele
  * @param *error ukazatel na bool oznamujici chybu pri vypoctu
- * @return faktorial z cisla x
+ * @return n-ta mocnina z cisla x
  * Funkce power pocita n-tou mocninu z cisla x, pokud pri vypoctu nastane chyba,
  * nebo vypocet neni definovan nastavi se bool error na true a navratova hodnota neni specifikovana
  */
@@ -90,12 +90,13 @@ double power(double x, double n, bool *error);
 double root(double x, bool *error);
 
 /**
- * @brief funkce pocitajici pririzeny logaritmus
+ * @brief funkce pocitajici n-tou mocninu cisla
  * @ingroup Functions
- * @param x cislo z ktereho chceme vypocist logaritmus
+ * @param x cislo z ktereho chceme vypocist mocninu
+ * @param n cislo urcujici mocnitele
  * @param *error ukazatel na bool oznamujici chybu pri vypoctu
- * @return logaritmus z cisla x
- * Funkce log pocita prirozeny logaritmus z cisla x, pokud pri vypoctu nastane chyba,
+ * @return n-ta mocnina z cisla x
+ * Funkce power pocita n-tou mocninu z cisla x, pokud pri vypoctu nastane chyba,
  * nebo vypocet neni definovan nastavi se bool error na true a navratova hodnota neni specifikovana
  */
 double ln(double x, bool *error); //bonus
