@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tdd_test.dir/mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.cpp.o"
+  "CMakeFiles/tdd_test.dir/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.cpp.o"
   "CMakeFiles/tdd_test.dir/tdd_tests.cpp.o"
   "tdd_test.pdb"
   "tdd_test"

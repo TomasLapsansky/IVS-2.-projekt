@@ -98,4 +98,4 @@ double root(double x, bool *error);
  * Funkce log pocita prirozeny logaritmus z cisla x, pokud pri vypoctu nastane chyba,
  * nebo vypocet neni definovan nastavi se bool error na true a navratova hodnota neni specifikovana
  */
-double log(double x, bool *error); //bonus
+double calc_pow(double x, double y, bool *error); //bonus

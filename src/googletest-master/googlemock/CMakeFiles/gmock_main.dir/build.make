@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master
+CMAKE_SOURCE_DIR = /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master
+CMAKE_BINARY_DIR = /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master
 
 # Include any dependencies generated for this target.
 include googlemock/CMakeFiles/gmock_main.dir/depend.make
@@ -59,16 +59,16 @@ include googlemock/CMakeFiles/gmock_main.dir/flags.make
 
 googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o: googlemock/CMakeFiles/gmock_main.dir/flags.make
 googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o: googletest/src/gtest-all.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o"
-	cd /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o -c /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googletest/src/gtest-all.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o"
+	cd /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o -c /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googletest/src/gtest-all.cc
 
 googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.i"
-	cd /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googletest/src/gtest-all.cc > CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.i
+	cd /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googletest/src/gtest-all.cc > CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.i
 
 googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.s"
-	cd /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googletest/src/gtest-all.cc -o CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.s
+	cd /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googletest/src/gtest-all.cc -o CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.s
 
 googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o.requires:
 
@@ -83,16 +83,16 @@ googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o.provides.b
 
 googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o: googlemock/CMakeFiles/gmock_main.dir/flags.make
 googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o: googlemock/src/gmock-all.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o"
-	cd /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.o -c /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/src/gmock-all.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o"
+	cd /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.o -c /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/src/gmock-all.cc
 
 googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gmock_main.dir/src/gmock-all.cc.i"
-	cd /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/src/gmock-all.cc > CMakeFiles/gmock_main.dir/src/gmock-all.cc.i
+	cd /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/src/gmock-all.cc > CMakeFiles/gmock_main.dir/src/gmock-all.cc.i
 
 googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gmock_main.dir/src/gmock-all.cc.s"
-	cd /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/src/gmock-all.cc -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.s
+	cd /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/src/gmock-all.cc -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.s
 
 googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o.requires:
 
@@ -107,16 +107,16 @@ googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o.provides.build: googlemo
 
 googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: googlemock/CMakeFiles/gmock_main.dir/flags.make
 googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: googlemock/src/gmock_main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
-	cd /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/src/gmock_main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+	cd /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/src/gmock_main.cc
 
 googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gmock_main.dir/src/gmock_main.cc.i"
-	cd /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/src/gmock_main.cc > CMakeFiles/gmock_main.dir/src/gmock_main.cc.i
+	cd /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/src/gmock_main.cc > CMakeFiles/gmock_main.dir/src/gmock_main.cc.i
 
 googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gmock_main.dir/src/gmock_main.cc.s"
-	cd /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/src/gmock_main.cc -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.s
+	cd /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/src/gmock_main.cc -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.s
 
 googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.requires:
 
@@ -143,8 +143,8 @@ googlemock/libgmock_main.so: googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.
 googlemock/libgmock_main.so: googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
 googlemock/libgmock_main.so: googlemock/CMakeFiles/gmock_main.dir/build.make
 googlemock/libgmock_main.so: googlemock/CMakeFiles/gmock_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libgmock_main.so"
-	cd /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gmock_main.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libgmock_main.so"
+	cd /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gmock_main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 googlemock/CMakeFiles/gmock_main.dir/build: googlemock/libgmock_main.so
@@ -158,10 +158,10 @@ googlemock/CMakeFiles/gmock_main.dir/requires: googlemock/CMakeFiles/gmock_main.
 .PHONY : googlemock/CMakeFiles/gmock_main.dir/requires
 
 googlemock/CMakeFiles/gmock_main.dir/clean:
-	cd /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && $(CMAKE_COMMAND) -P CMakeFiles/gmock_main.dir/cmake_clean.cmake
+	cd /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock && $(CMAKE_COMMAND) -P CMakeFiles/gmock_main.dir/cmake_clean.cmake
 .PHONY : googlemock/CMakeFiles/gmock_main.dir/clean
 
 googlemock/CMakeFiles/gmock_main.dir/depend:
-	cd /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : googlemock/CMakeFiles/gmock_main.dir/depend
 

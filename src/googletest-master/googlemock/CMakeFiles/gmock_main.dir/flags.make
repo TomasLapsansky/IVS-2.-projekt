@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -
 
 CXX_DEFINES = -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS
 
-CXX_INCLUDES = -I/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/include -I/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock -I/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googletest/include -I/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googletest 
+CXX_INCLUDES = -I/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/include -I/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock -I/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googletest/include -I/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googletest 
 

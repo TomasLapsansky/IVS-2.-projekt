@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.cpp" "/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles/tdd_test.dir/mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.cpp.o"
-  "/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/tdd_tests.cpp" "/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles/tdd_test.dir/tdd_tests.cpp.o"
+  "/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.cpp" "/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles/tdd_test.dir/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.cpp.o"
+  "/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/tdd_tests.cpp" "/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles/tdd_test.dir/tdd_tests.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,8 +16,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

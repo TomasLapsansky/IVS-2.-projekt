@@ -114,3 +114,20 @@ double root(double x, bool *error)
 	
 	return sqrt(x);
 }
+
+double calc_pow(double x, double y, bool *error)
+{
+
+
+	if((x == 0) && (y < 0))
+	{
+		*error = true;
+		return 0;
+	}
+	
+	if(isnan(pow(x, y)) || (isinf(pow(x, y))))
+	{
+		*error = true;
+		return 0;
+	}
+}

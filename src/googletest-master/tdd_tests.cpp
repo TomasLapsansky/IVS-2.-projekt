@@ -344,3 +344,38 @@ TEST_F(Math_test_root, Bad_numbers)
 	EXPECT_EQ(root(-2.2, &error), 0);
 	EXPECT_TRUE(error);
 }
+
+class Math_test_pow : public ::testing::Test
+{
+public:
+
+	bool error = false;
+	
+};
+
+TEST_F(Math_test_pow, Zero_numbers)
+{
+	EXPECT_EQ(calc_pow(0, 5, &error), 0);
+	EXPECT_FALSE(error);
+	
+	EXPECT_EQ(calc_pow(0, 5.5, &error), 0);
+	EXPECT_FALSE(error);
+	
+	EXPECT_EQ(calc_pow(0, -1, &error), 0);
+	EXPECT_TRUE(error);
+	
+	error = false;
+	EXPECT_EQ(calc_pow(0, -1.5, &error), 0);
+	EXPECT_TRUE(error);
+}
+
+TEST_F(Math_test_pow, Bad_numbers)
+{
+	
+	EXPECT_EQ(calc_pow(-4, 2.5, &error), 0);
+	EXPECT_TRUE(error);
+	
+	error = false;
+	EXPECT_EQ(calc_pow(-3.5, 1.5, &error), 0);
+	EXPECT_TRUE(error);
+}

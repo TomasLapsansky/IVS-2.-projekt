@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master
+CMAKE_SOURCE_DIR = /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master
+CMAKE_BINARY_DIR = /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,9 +135,9 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -230,32 +230,32 @@ gtest_main/fast:
 	$(MAKE) -f googlemock/gtest/CMakeFiles/gtest_main.dir/build.make googlemock/gtest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.o: mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.cpp.o
+home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.o: home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.cpp.o
 
-.PHONY : mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.o
+.PHONY : home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.o
 
 # target to build an object file
-mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.cpp.o:
-	$(MAKE) -f CMakeFiles/tdd_test.dir/build.make CMakeFiles/tdd_test.dir/mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.cpp.o
-.PHONY : mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.cpp.o
+home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.cpp.o:
+	$(MAKE) -f CMakeFiles/tdd_test.dir/build.make CMakeFiles/tdd_test.dir/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.cpp.o
+.PHONY : home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.cpp.o
 
-mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.i: mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.cpp.i
+home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.i: home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.cpp.i
 
-.PHONY : mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.i
+.PHONY : home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.i
 
 # target to preprocess a source file
-mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.cpp.i:
-	$(MAKE) -f CMakeFiles/tdd_test.dir/build.make CMakeFiles/tdd_test.dir/mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.cpp.i
-.PHONY : mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.cpp.i
+home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.cpp.i:
+	$(MAKE) -f CMakeFiles/tdd_test.dir/build.make CMakeFiles/tdd_test.dir/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.cpp.i
+.PHONY : home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.cpp.i
 
-mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.s: mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.cpp.s
+home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.s: home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.cpp.s
 
-.PHONY : mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.s
+.PHONY : home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.s
 
 # target to generate assembly for a file
-mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.cpp.s:
-	$(MAKE) -f CMakeFiles/tdd_test.dir/build.make CMakeFiles/tdd_test.dir/mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.cpp.s
-.PHONY : mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.cpp.s
+home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.cpp.s:
+	$(MAKE) -f CMakeFiles/tdd_test.dir/build.make CMakeFiles/tdd_test.dir/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.cpp.s
+.PHONY : home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.cpp.s
 
 tdd_tests.o: tdd_tests.cpp.o
 
@@ -302,9 +302,9 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.o"
-	@echo "... mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.i"
-	@echo "... mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.s"
+	@echo "... home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.o"
+	@echo "... home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.i"
+	@echo "... home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.s"
 	@echo "... tdd_tests.o"
 	@echo "... tdd_tests.i"
 	@echo "... tdd_tests.s"

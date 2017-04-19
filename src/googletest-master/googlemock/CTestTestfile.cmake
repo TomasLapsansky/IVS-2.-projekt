@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock
-# Build directory: /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock
+# Source directory: /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock
+# Build directory: /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
