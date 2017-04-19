@@ -345,7 +345,7 @@ TEST_F(Math_test_root, Bad_numbers)
 	EXPECT_TRUE(error);
 }
 
-class Math_test_pow : public ::testing::Test
+class Math_test_ln : public ::testing::Test
 {
 public:
 
@@ -353,29 +353,21 @@ public:
 	
 };
 
-TEST_F(Math_test_pow, Zero_numbers)
+TEST_F(Math_test_ln, Classic_numbers)
 {
-	EXPECT_EQ(calc_pow(0, 5, &error), 0);
+	EXPECT_EQ(ln(1, &error), 0);
 	EXPECT_FALSE(error);
 	
-	EXPECT_EQ(calc_pow(0, 5.5, &error), 0);
+	EXPECT_EQ(ln(M_E, &error), 1);
 	EXPECT_FALSE(error);
-	
-	EXPECT_EQ(calc_pow(0, -1, &error), 0);
-	EXPECT_TRUE(error);
-	
-	error = false;
-	EXPECT_EQ(calc_pow(0, -1.5, &error), 0);
-	EXPECT_TRUE(error);
 }
 
-TEST_F(Math_test_pow, Bad_numbers)
+TEST_F(Math_test_ln, Bad_numbers)
 {
-	
-	EXPECT_EQ(calc_pow(-4, 2.5, &error), 0);
+	EXPECT_EQ(ln(0, &error), 0);
 	EXPECT_TRUE(error);
 	
 	error = false;
-	EXPECT_EQ(calc_pow(-3.5, 1.5, &error), 0);
+	EXPECT_EQ(ln(-5, &error), 0);
 	EXPECT_TRUE(error);
 }
