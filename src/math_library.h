@@ -36,12 +36,11 @@ double minus(double x, double y, bool *error);
  * @ingroup Functions
  * @param x prvni cislo soucinu
  * @param y druhe cislo soucinu
- * @param *error ukazatel na bool oznamujici chybu pri vypoctu
  * @return soucin x * y
  * Funkce multi odcita parametr x a y a vraci jejich soucin, pokud pri vypoctu nastane chyba
  * nastavi se bool error na true a navratova hodnota neni specifikovana
  */
-double multi(double x, double y, bool *error);
+double multi(double x, double y);
 
 /**
  * @brief funkce pocitajici podil dvou cisel
