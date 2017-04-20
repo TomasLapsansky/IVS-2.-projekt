@@ -1,3 +1,21 @@
+/******************************************************************************
+ * Název projektu: IVS-2.-projekt
+ * Soubor: mainwindow.cpp
+ * Datum:  7.4.2017
+ * Poslední změna: 20.4.2017
+ * Autor:  David Dejmal xdejma00
+ *
+ * Popis: soubor mainwindow.h, obsahuje hlavickovy soubor mainwindow.h s 
+ * definicemi funkci z mainwindow.cpp
+ *        
+ ******************************************************************************/
+
+/**
+ * @file mainwindow.h
+ * 
+ * @brief obsahuje definice funkci k mainwindow.cpp
+ */
+
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
