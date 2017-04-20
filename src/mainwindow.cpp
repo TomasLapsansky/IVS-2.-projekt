@@ -1,3 +1,20 @@
+/******************************************************************************
+ * Název projektu: IVS-2.-projekt
+ * Soubor: mainwindow.cpp
+ * Datum:  7.4.2017
+ * Poslední změna: 20.4.2017
+ * Autor:  David Dejmal xdejma00
+ *
+ * Popis: soubor mainwindow.cpp, obsahuje graficke rozhrani kalkulacky
+ *        
+ ******************************************************************************/
+
+/**
+ * @file mainwindow.cpp
+ * 
+ * @brief obsahuje graficke rozhrani kalkulacky
+ */
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "QKeyEvent"
