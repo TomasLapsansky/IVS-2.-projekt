@@ -1,3 +1,21 @@
+/******************************************************************************
+ * Název projektu: IVS-2.-projekt
+ * Soubor: math_library.h
+ * Datum:  7.4.2017
+ * Poslední změna: 20.4.2017
+ * Autor:  David Dejmal xdejma00
+ *
+ * Popis: soubor math_library.h, obsahuje hlavickovy soubor s 
+ * definicemi funkci z math_library.cpp
+ *        
+ ******************************************************************************/
+
+/**
+ * @file math_library.h
+ * 
+ * @brief obsahuje definice funkci k math_library.cpp
+ */
+
 #include <stdbool.h>
 #include <limits.h>
 #include <math.h>
@@ -89,13 +107,12 @@ double power(double x, double n, bool *error);
 double root(double x, bool *error);
 
 /**
- * @brief funkce pocitajici n-tou mocninu cisla
+ * @brief funkce pocitajici prirozeny logaritmus cisla
  * @ingroup Functions
- * @param x cislo z ktereho chceme vypocist mocninu
- * @param n cislo urcujici mocnitele
+ * @param x cislo z ktereho chceme vypocist prirozeny logaritmus
  * @param *error ukazatel na bool oznamujici chybu pri vypoctu
- * @return n-ta mocnina z cisla x
- * Funkce power pocita n-tou mocninu z cisla x, pokud pri vypoctu nastane chyba,
+ * @return prirozeny logaritmus z cisla x
+ * Funkce ln pocita prirozeny logaritmus z cisla x, pokud pri vypoctu nastane chyba,
  * nebo vypocet neni definovan nastavi se bool error na true a navratova hodnota neni specifikovana
  */
 double ln(double x, bool *error); //bonus
