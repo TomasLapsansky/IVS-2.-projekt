@@ -1,2 +1,5 @@
-Vramci profilingu program travi najviac casu vo funkcii power_suma, a najcastejsie pouzivanou funkciou z math_library.h je plus(double x, double y, *error)
-Pri optimalizacii kodu by som sa zameral jedine na rychlejsie scitavanie, no kedze sa jedna o sumu o velkosti N zavysiacej od vstupu, nie je optimalizacia kodu na minimum jednoducha, kedze pocet prechodov je si myslim potrebny. Bolo by mozne spojit funkciu pre vypocet priemeru a sucet v sume, no bolo by to komplikovane a nie je iste ci by to nacitavanie urychlilo.
+Vrámci profilingu program tráví nejvíce času ve funkci power_suma a nejčastější používanou funkcí z knihovny math_library.h je plus(double x, double y, *error) .
+Při optimalizaci kódu by jsem se zaměřil jedině na rychlejší sčítání. 
+Jelikož se však jedná o sumu o velikosti N závisející od vstupu není optimalizace kódu na minimum jednoduchá. 
+Počet přechodů je dle mého názoru potřebný.
+Bylo by možné spojit funkci pro výpočet průměru a součet v sumě, ovšem bylo by to zbytečně komplikované a není jisté zda by se načítávání urychlilo.
