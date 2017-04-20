@@ -1,3 +1,20 @@
+/******************************************************************************
+ * Název projektu: IVS-2.-projekt
+ * Soubor: math_library.cpp
+ * Datum:  10.4.2017
+ * Poslední změna: 20.4.2017
+ * Autor:  Tomas Lapsansky, xlapsa00
+ *
+ * Popis: soubor math_library.cpp, obsahuje matematicke funkce pro kalkulacku
+ *        
+ ******************************************************************************/
+
+/**
+ * @file math_library.cpp
+ * 
+ * @brief obsahuje matematicke funkce pro kalkulacku
+ */
+
 #include "math_library.h"
 
 double plus(double x, double y, bool *error)
