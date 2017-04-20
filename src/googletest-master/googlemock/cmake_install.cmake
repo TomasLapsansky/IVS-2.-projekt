@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock
+# Install script for directory: /home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgmock.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/libgmock.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/libgmock.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgmock.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgmock.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -55,7 +55,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgmock_main.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/libgmock_main.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/libgmock_main.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgmock_main.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgmock_main.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -65,12 +65,12 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/include/gmock")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/include/gmock")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/gtest/cmake_install.cmake")
+  include("/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googlemock/gtest/cmake_install.cmake")
 
 endif()
 

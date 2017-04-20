@@ -65,11 +65,6 @@ void MainWindow::on_BT_0_clicked()
      Zapis('0');
 }
 
-void MainWindow::on_BT_pi_clicked()
-{
-
-}
-
 void MainWindow::Zapis(char cislo)
 {
     if(prepis)  //prepis je povolen a text se zmenil zapsanim do primo do labelu
@@ -160,6 +155,8 @@ void MainWindow::on_BT_Equal_clicked()
                 if(chyba)
                 {
                    ui->lineEdit->setText("Math error!");
+                   prepis=true;
+                   chyba=false;
                 }
                 else
                 {
@@ -184,7 +181,7 @@ void MainWindow::on_BT_Equal_clicked()
             break;
 
         case mull:
-            help_qstring=QString::number(multi(a,b,&chyba));    //prevede double do qstringu
+            help_qstring=QString::number(multi(a,b));    //prevede double do qstringu
             ui->lineEdit->setText(help_qstring);
             if(chyba)
             {
@@ -194,7 +191,6 @@ void MainWindow::on_BT_Equal_clicked()
             }
             else
             {
-
                 ui->lineEdit->setText(help_qstring);
             }
             break;
@@ -209,23 +205,21 @@ void MainWindow::on_BT_Equal_clicked()
             }
             else
             {
-                ui->lineEdit->setText(help_qstring);
-                prepis=true;
-                chyba=false;
+                ui->lineEdit->setText(help_qstring);   
             }
             break;
 
         case faktt:
-            help_qstring=QString::number(fact(b,&chyba));    //prevede double do qstringu
+            help_qstring=QString::number(fact(a,&chyba));    //prevede double do qstringu
             if(chyba)
             {
                ui->lineEdit->setText("Math error!");
+               prepis=true;
+               chyba=false;
             }
             else
             {
-                ui->lineEdit->setText(help_qstring);
-                prepis=true;
-                chyba=false;
+                ui->lineEdit->setText(help_qstring);                
             }
             break;
 
@@ -234,12 +228,12 @@ void MainWindow::on_BT_Equal_clicked()
             if(chyba)
             {
                ui->lineEdit->setText("Math error!");
+               prepis=true;
+               chyba=false;
             }
             else
             {
-                ui->lineEdit->setText(help_qstring);
-                prepis=true;
-                chyba=false;
+                ui->lineEdit->setText(help_qstring);    
             }
             break;
 
@@ -253,11 +247,22 @@ void MainWindow::on_BT_Equal_clicked()
             }
             else
             {
-
                 ui->lineEdit->setText(help_qstring);
             }
             break;
-
+        case lnn:
+            help_qstring=QString::number(ln(b,&chyba));
+            if(chyba)
+            {
+               ui->lineEdit->setText("Math error!");
+               prepis=true;
+               chyba=false;
+            }
+            else
+            {
+                ui->lineEdit->setText(help_qstring);
+            }
+            break;
 
        default:
                break;
@@ -303,6 +308,13 @@ void MainWindow::on_BT_Pow_clicked()
 {
     on_BT_Plus_clicked();
     operat=poww;
+}
+
+void MainWindow::on_BT_Lnn_clicked()
+{
+    on_BT_Plus_clicked();
+    operat=lnn;
+    on_BT_Equal_clicked();
 }
 
 void MainWindow::keyPressEvent(QKeyEvent * event)
@@ -354,7 +366,10 @@ void MainWindow::keyPressEvent(QKeyEvent * event)
      case Qt::Key_Delete:
           on_BT_CLEAR_clicked();
           break;
-     case Qt::Key_Comma:
+     case ',':
+          on_BT_Comma_clicked();
+          break;
+     case '.':
           on_BT_Comma_clicked();
           break;
      case Qt::Key_Slash:
@@ -363,16 +378,18 @@ void MainWindow::keyPressEvent(QKeyEvent * event)
      case Qt::Key_Exclam:
           on_BT_Fakt_clicked();
           break;
-     case Qt::Key_Period://TODO znak *
+     case Qt::Key_Asterisk:
           on_BT_Mul_clicked();
           break;
      case Qt::Key_Equal:
           on_BT_Equal_clicked();
           break;
-   /*  case Qt::Key_://TODO znak ^ a sqrt ma zkratku???
+    case '^':
           on_BT_Pow_clicked();
-          break;*/
+          break;
     default:
          break;
  }
 }
+
+

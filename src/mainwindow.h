@@ -201,8 +201,7 @@ private slots:
      */
     void on_BT_Pow_clicked();
 
-    //akce tlacitko pi
-    void on_BT_pi_clicked();
+    void on_BT_Lnn_clicked();
 
     /**
      * @ingroup Interface
@@ -221,7 +220,7 @@ private:
     bool transfer=false;
     enum druh_operator      // vyctovy typ urcijici typ zadaneho operatoru
     {
-       nothing,pluss,minuss,mull,divv,faktt,sqrtt,poww,
+       nothing,pluss,minuss,mull,divv,faktt,sqrtt,poww,lnn
     }  operat=nothing;   //nic epsi jak operat me nenapadlo
     bool chyba=false;   //pro zjisteni chyby
     void keyPressEvent(QKeyEvent * event);

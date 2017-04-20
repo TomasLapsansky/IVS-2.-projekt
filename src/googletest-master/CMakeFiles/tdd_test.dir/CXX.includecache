@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/tdd_tests.cpp
+/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/tdd_tests.cpp
 gtest/gtest.h
-/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/gtest/gtest.h
+/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/gtest/gtest.h
 ../math_library.h
-/mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.h
+/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.h
 
-/mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.cpp
+/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.cpp
 math_library.h
-/mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.h
+/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.h
 
-/mnt/hgfs/FIT/2sem/IVS/proj2/src/math_library.h
+/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/math_library.h
 stdbool.h
 -
 limits.h

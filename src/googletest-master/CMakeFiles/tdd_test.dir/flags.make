@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/hgfs/FIT/2sem/IVS/proj2/src/googletest-master/googletest/include 
+CXX_INCLUDES = -I/home/tomas/Desktop/FIT/2sem/IVS/proj2/src/googletest-master/googletest/include 
 
