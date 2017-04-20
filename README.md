@@ -1,8 +1,5 @@
 Prostredi
 ---------
-
-- Ubuntu 32bit
-- Ubuntu 64bit
 - Windows 10 32bit
 - Windows 10 64bit
 
