@@ -1,9 +1,16 @@
+# author: Tomas Lapsansky (xlapsa00)
+# date: 22.4.2017
+# project: IVS 2. project
+# error: all, run
+
+# Optimalized for linux
+
 pack: doc
-	git archive --format=zip master > repository.zip
-	zip -r odovzdanie.zip ../doc/ ../install/ repository.zip
+	git clone git@github.com:TomasLapsansky/IVS-2.-projekt.git repository
+	zip -r odovzdanie.zip ../doc/ ../install/ repository
 	
 clean:
-	rm repository.zip
+	rm -rf repository
 	rm -r ../doc
 	rm -f warn_doxyfile
 	
