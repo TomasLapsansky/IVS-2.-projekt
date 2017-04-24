@@ -6,11 +6,11 @@
 # Optimalized for linux
 
 pack: doc
-	git clone git@github.com:TomasLapsansky/IVS-2.-projekt.git repository
-	zip -r xlapsa00_xdejma00_xdeing00.zip ../doc/ ../install/ repository
+	git clone git@github.com:TomasLapsansky/IVS-2.-projekt.git repo
+	zip -r xlapsa00_xdejma00_xdeing00.zip ../doc/ ../install/ repo
 	
 clean:
-	rm -rf repository
+	rm -rf repo
 	rm -r ../doc
 	rm -f warn_doxyfile
 	
