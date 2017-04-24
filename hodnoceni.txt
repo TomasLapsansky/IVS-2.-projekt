@@ -1,3 +1,3 @@
 xlapsa00 100 (Matematicka knihovna, Testy pro mk., Profiling (+ smerodajna odchylka), Makefile)
 xdejma00 100 (GUI, Instalator, Mockup)
-xdeing00  50 (Dokumentace)
+xdeing00  95 (Dokumentace, Kontrola kodu, Testovani UI)
