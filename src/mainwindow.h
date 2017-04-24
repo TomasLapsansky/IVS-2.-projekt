@@ -150,10 +150,8 @@ private slots:
 
     /**
      * @ingroup Interface
-     * @brief Tlacitko minus
-     * Pokud je operat rozdilny od nothing tak se prevede retezec na cislo, pote se vypocte vysledek predchozi operace a zobrazi.
-     * Funkce nastavi prepis na true a nastavi operat na pluss. Pokud byl operat nothing pouze se prevede retezec na cislo nastavi se prepis
-     * na true a operat na pluss.
+     * @brief Tlacitko desetinna tecka
+     * Pokud zadane cislo jeste neobsahuje desetinou tecku, tak ji prida, nastavi prepis na false.
      */
     void on_BT_Comma_clicked();
 
@@ -197,7 +195,7 @@ private slots:
      * @ingroup Interface
      * @brief Tlacitko odmocnina
      * Vypocte se vysledek predchozi operace podle operat a pote se vzpocte faktorial z vysledku ktera se zobrazi. Operat se nastavi na nothing a prepis na true.
-     * Pokud byla predchozi operace nothing tak se pouze prevede retezec na cislo a vypocte se faktorial z cisla. Operat se nastavi na nothing a prepis na true.
+     * Pokud byla predchozi operace nothing tak se pouze prevede retezec na cislo a vypocte se faktorial z cisla a zobrazi se. Operat se nastavi na nothing a prepis na true.
      * Pokud se nepovede prevod retezce na cislo vypise se chyba.
      */
     void on_BT_Fakt_clicked();
@@ -205,8 +203,8 @@ private slots:
     /**
      * @ingroup Interface
      * @brief Tlacitko odmocnina
-     * Vypocte se vysledek predchozi operace podle operat a pote se vzpocte odmocnina z vysledku ktera se zobrazi. Operat se nastavi na nothing a prepis na true.
-     * Pokud byla predchozi operace nothing tak se pouze prevede retezec na cislo a vypocte se odmocnina z cisla. Operat se nastavi na nothing a prepis na true.
+     * Vypocte se vysledek predchozi operace podle operat a pote se vzpocte odmocnina z vysledku a zobrazi se. Operat se nastavi na nothing a prepis na true.
+     * Pokud byla predchozi operace nothing tak se pouze prevede retezec na cislo a vypocte se odmocnina z cisla a zobrazi se. Operat se nastavi na nothing a prepis na true.
      */
     void on_BT_Sqrt_clicked();
 
@@ -218,7 +216,12 @@ private slots:
      * na true a operat na poww. Pokud se nepovede prevod retezce na cislo vypise se chyba.
      */
     void on_BT_Pow_clicked();
-
+    /**
+     * @ingroup Interface
+     * @brief Tlacitko prirozeny logaritmus
+     * Vypocte se vysledek predchozi operace podle operat a pote se vzpocte prirozeny logaritmus z vysledku a zobrazi se. Operat se nastavi na nothing a prepis na true.
+     * Pokud byla predchozi operace nothing tak se pouze prevede retezec na cislo a vypocte se priroyeny logaritmus z cisla a zobrazi se. Operat se nastavi na nothing a prepis na true.
+     */
     void on_BT_Lnn_clicked();
 
     /**
