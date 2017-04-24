@@ -7,7 +7,7 @@
 
 pack: doc
 	git clone git@github.com:TomasLapsansky/IVS-2.-projekt.git repository
-	zip -r odovzdanie.zip ../doc/ ../install/ repository
+	zip -r xlapsa00_xdejma00_xdeing00.zip ../doc/ ../install/ repository
 	
 clean:
 	rm -rf repository
