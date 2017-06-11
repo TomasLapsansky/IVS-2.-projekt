@@ -1,0 +1,2 @@
+Repozitar s instalaci a uzivatelskou priruckou byl odevzdan na server ivs.
+Aktualni odevzdane zdrovoje soubory neobsahuji googletest zdrovoje soubory z duvodu uspory mista.
